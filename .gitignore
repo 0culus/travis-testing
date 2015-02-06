@@ -29,3 +29,6 @@
 
 # dirs
 bin/
+
+# haskell
+*.hi
