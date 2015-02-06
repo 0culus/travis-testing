@@ -11,7 +11,7 @@ main:
 	$(CC) $(CPP11) src/hello.cc -o bin/hello
 
 haskell-test:
-	$(HC) src/hello.hs
+	$(HC) src/hello.hs -o bin/haskell-hello
 
 clean:
 	rm -rf bin
