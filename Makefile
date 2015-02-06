@@ -1,4 +1,5 @@
 CC    = clang++
+HC    = ghc
 DEBUG = -g -Wall
 CPP11 = -std=c++11
 CPP14 = -std=c++14
@@ -8,6 +9,9 @@ OBJ   = -c
 main:
 	mkdir -p bin
 	$(CC) $(CPP11) src/hello.cc -o bin/hello
+
+haskell-test:
+	$(HC) hello.hs
 
 clean:
 	rm -rf bin
