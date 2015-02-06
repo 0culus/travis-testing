@@ -3,6 +3,6 @@ language:
 compiler:
   - clang
 
-before_install: sudo apt-get update
+before_install: sudo apt-get update; sudo apt-get install ghc
 
-script: make 
+script: make main; make haskell-test
